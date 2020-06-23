@@ -24,7 +24,7 @@ import java.util.List;
 public class CrawlingRunner implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        String url = "https://www.stockx.com/sneakers";
+        /*String url = "https://www.stockx.com/sneakers";
 
         FirefoxOptions options = new FirefoxOptions();
 //        options.addArguments("--disable-popup-blocking");
@@ -55,8 +55,8 @@ public class CrawlingRunner implements ApplicationRunner {
                 array.add(subtitle);
                 arr.add(array);
             });
-        });
-        System.out.println(arr);
+        });*/
+//        System.out.println(arr);
 
 //        elements.stream().forEach(i -> {
 //            System.out.println(i.getAttribute("href"));
