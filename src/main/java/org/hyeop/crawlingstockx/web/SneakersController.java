@@ -2,7 +2,6 @@ package org.hyeop.crawlingstockx.web;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.hyeop.crawlingstockx.domain.utils.SneakersPrice;
 import org.hyeop.crawlingstockx.service.SneakersService;
 import org.hyeop.crawlingstockx.web.dto.SneakersDto;
 import org.openqa.selenium.json.Json;
@@ -21,10 +20,14 @@ public class SneakersController {
 
     @GetMapping("/")
     public String index(Model model) throws JsonProcessingException {
-        List<SneakersDto> sne = sneakersService.printSneakers();
-        model.addAttribute("sneakersList", sne);
-        ObjectMapper mapper = new ObjectMapper();
-        System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(sne));
-        return "index";
+//        List<SneakersDto> sne = sneakersService.printSneakers();
+//        model.addAttribute("sneakersList", sne);
+//        model.addAttribute("hello", "Hello Thymeleaf!");
+//
+//        ObjectMapper mapper = new ObjectMapper();
+//        System.out.println(mapper.writerWithDefaultPrettyPrinter().writeValueAsString(sne));
+//        return "index";
+
+        return "index.html";
     }
 }

@@ -9,6 +9,9 @@ import lombok.*;
 public class SneakersPrice {
     String size;
     String price;
+    String priceTax;
+    String inputPrice;
+    String difference;
 
     @Override
     public String toString() {

@@ -10,15 +10,17 @@
     <title>Document</title>
 </head>
 <body>
+<div class="col-md-12">
+
 {{#sneakersList}}
 {{#.}}
-    <table class="table" style="max-width: 20rem;">
+    <table class="table col-md-4" style="">
         <tr>
             <td rowspan="99">
                 <table>
                     <tr>
                         <td>
-                            <img src="{{imgPath}}" alt="" style="max-height: 18rem;">
+                            <img src="{{imgPath}}" alt="" style="width: 300px;">
                         </td>
                     </tr>
                     <tr>
@@ -28,14 +30,22 @@
             </td>
             <td>사이즈</td>
             <td>가격</td>
+            <td>관세 포함</td>
         </tr>
 
         <tr>
         <tr>
             {{#priceList}}
-                <tr style="max-height: 5rem;">
+                <tr style="height:16px;">
                     <td>{{size}}</td>
                     <td>{{price}}</td>
+                    <td>{{priceTax}}</td>
+                    <td>
+                        <input type="number">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td><button id="calculate" value="계산"></button></td>
                 </tr>
             {{/priceList}}
         </tr>
@@ -45,5 +55,6 @@
 {{/.}}
 {{/sneakersList}}
 {{sneakersList}}
+</div>
 </body>
 </html>
